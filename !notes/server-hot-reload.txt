@@ -1,0 +1,13 @@
+to use "import from..." syntax we have to install babel-node with presets:
+
+package.json:
+- dependencies:
+"babel-cli": "6.26.0",
+"babel-preset-env": "1.6.1",
+"babel-preset-react": "6.24.1",
+"babel-preset-stage-2": "6.24.1",
+windows: npm i -g nodemon
+linux: "pm2": "latest"
+
+- scripts: "dev": "nodemon --exec babel-node lib/server.js"
+- scripts for linux: "dev": "pm2 start lib/server.js --watch --interpreter babel-node"
