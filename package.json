@@ -7,14 +7,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --exec babel-node lib/server.js",
-    "webpack": "webpack -wd"
+    "webpack": "webpack -wd",
+    "test": "jest --watch"
   },
   "babel": {
-    "presets": [
-      "react",
-      "env",
-      "stage-2"
-    ]
+    "presets": ["react", "env", "stage-2"]
   },
   "devDependencies": {
     "babel-eslint": "8.0.2",
@@ -30,6 +27,7 @@
     "babel-preset-stage-2": "6.24.1",
     "ejs": "2.5.7",
     "express": "4.16.2",
+    "jest": "21.2.1",
     "pm2": "2.7.2",
     "prop-types": "15.6.0",
     "react": "16.1.1",
