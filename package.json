@@ -9,7 +9,7 @@
     "start": "npm-run-all --parallel dev webpack test",
     "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
-    "test": "jest --watchAll"
+    "test": "set NODE_PATH=./lib&& jest --watchAll"
   },
   "babel": {
     "presets": [
