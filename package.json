@@ -11,7 +11,7 @@
     "webpack": "webpack -wd",
     "test": "set NODE_PATH=./lib&& jest --watchAll",
     "test-cover": "set NODE_PATH=./lib&& jest --coverage",
-    "build": "webpack -p",
+    "build-webpack": "webpack -p",
     "build-node": "babel lib -d build --copy-files"
   },
   "babel": {
